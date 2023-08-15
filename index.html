@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/logo.png">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <div class="background">
+        <img src="images/circulos-gradient.svg" alt="" class="circulos-gradient-top">
+        <img src="images/circulos-gradient.svg" alt="" class="circulos-gradient-bottom">
+    </div>
+    <Header class="header">
+        <img src="images/logo.png" alt="" class="image-header">
+        <span class="title">Tu app para que no olvides nada.</span>
+    </Header>
+    <main>
+        <div class="background-light"></div>
+        <div class="container">
+                <div class="btn-add">
+                    <button type="txt" class="add-btn" id="add">
+                        <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                    </button>
+                </div>
+            <section id="home" >
+                <div class="contenedorHome">
+                    <h3>Aún no tenés ningún producto agregado a tu lista.</h3>
+                    <span>Crea una nueva lista</span>
+                    
+                </div>
+                <button id="agregar" class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M37.7778 22.2222H2.22222C1.00741 22.2222 0 21.2148 0 20C0 18.7852 1.00741 17.7778 2.22222 17.7778H37.7778C38.9926 17.7778 40 18.7852 40 20C40 21.2148 38.9926 22.2222 37.7778 22.2222Z" fill="#292D32"/>
+                    <path d="M20 40C18.7852 40 17.7778 38.9926 17.7778 37.7778V2.22222C17.7778 1.00741 18.7852 0 20 0C21.2148 0 22.2222 1.00741 22.2222 2.22222V37.7778C22.2222 38.9926 21.2148 40 20 40Z" fill="#292D32"/>
+                    </svg></button>
+            </section>
+    
+            <section id="addList" class=" addList md-4">
+                <div class="popUp">
+                    <a href="#" id="close">
+                        <i class="far fa-times-circle"></i>
+                    </a>
+                    <form class="contPopUp">
+                        <div class="close-div">
+                            <button id="cancelar" class="close"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path d="M11 21C16.5 21 21 16.5 21 11C21 5.5 16.5 1 11 1C5.5 1 1 5.5 1 11C1 16.5 5.5 21 11 21Z" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.16998 13.83L13.83 8.17004" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.83 13.83L8.16998 8.17004" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                        </div>
+                        
+                        <span class="titulo-form">Agrega productos a tu lista</span>
+                        <input id="producto" type="text" placeholder="Ingresá un producto" autocomplete="off">
+                        <select id="categoria" required>
+                            <option value="" selected class="selected">Elegí una categoría</option>
+                            <option value="Almacén">Almacén</option>
+                            <option value="Limpieza">Art. de limpieza</option>
+                            <option value="Lactos">Lacteos</option>
+                            <option value="Carniceria">Carnicería</option>
+                            <option value="Electro">Electro</option>
+                            <option value="Panaderia">Panadería</option>
+                            <option value="Perfumería">Perfumería</option>
+                            <option value="Verdulería">Verdulería</option>
+                        </select>
+                        <p id="mensaje"></p>
+                        <span class="txt-descripcion">Descripción(opcional)</span>
+                        <textarea name="descripcion" id="description" class="description"></textarea>
+                        <div class="botones">
+                            <button id="addBtn">Agregar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+            <section id="list" class="md-5">
+                <div class="divList">
+                        <ul id="contList">
+                            <!--<li>
+                                <img src="/assets/img/limpieza.png" alt="">
+                                producto
+                                <p class="descripFinal">descripcion super larga del producto selccionado</p>
+                                <i id="arrow" class="fas fa-chevron-circle-right"></i>
+                            </li>-->
+                        </ul>
+                </div>
+                <button id="btnList">+</button>
+            </section>
+            <section id="lastPage" class="md-3">
+                <button id="volver">Volver</button>
+                <div id="productoCompleto">
+                    <!--<img  src="assets/img/caramelo.png" alt="">
+                    <h3>titulo</h3>
+                    <p>descripcion</p>-->
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+<script src="main.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</html>

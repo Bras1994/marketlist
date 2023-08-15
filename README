@@ -1,0 +1,9 @@
+Observaciones
+Fecha 14/08/2023 
+
+    Estilos:
+     Pantalla desktop - Configurar como el primer estilo
+    Funcionalidad: 
+        Errores encontrados:
+            -Configurar condicional de que cuando no cargue nada vulva al inicio si no hay nada ya precargado, si hay que vuelva a la listo. 
+            -LocalStorage solo está guardando el último item se carga. Puede que tambien provoque el primer error. 
