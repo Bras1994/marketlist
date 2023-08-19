@@ -58,7 +58,8 @@ addBtn.addEventListener('click', function(event){
     let description = document.getElementById('description').value
 
         if (producto != '' && categoria !=''){
-            let item =`<li class="list-group-item"> <span> ${producto} </span><button class="seguir" onclick= detalleFinal() >></button></li>`
+            /*let item =`<li class="list-group-item"> <span> ${producto} </span><button class="seguir" onclick= detalleFinal() >></button></li>`*/
+            let item =`<li class="list-group-item"> <span> ${producto} </span><button class="seguir" onclick= "removeItem()" >x</button></li>`
 
             list.style.display = 'flex'
             home.style.display = 'none'
@@ -72,10 +73,10 @@ addBtn.addEventListener('click', function(event){
 
             //"detalleFinal('${categoria}', '${producto}', '${description}')"
 
-            let detalleFinal= `<div id="detalle">
+            /*let detalleFinal= `<div id="detalle">
             <h4>${producto}</h4>
             <p>${description}</p>
-            </div>`
+            </div>`*/
             
             let btnVerMas = document.querySelector('.seguir')
 
